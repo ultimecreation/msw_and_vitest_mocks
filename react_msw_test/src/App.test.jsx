@@ -19,6 +19,7 @@ describe("App", () => {
     it("api success secnario on load", async () => {
         render(<App />);
         expect(await screen.findByText("Todo List : 1")).toBeInTheDocument();
+        expect(await screen.findByText('Overide original fetch call'))
         screen.debug()
     });
 

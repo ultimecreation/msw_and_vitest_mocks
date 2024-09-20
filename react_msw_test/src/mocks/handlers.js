@@ -6,7 +6,7 @@ export const handlers = [
             "todos": [
                 {
                     "id": 1,
-                    "todo": "Do something nice for someone I care about",
+                    "todo": "Overide original fetch call",
                     "completed": true,
                     "userId": 26
                 },

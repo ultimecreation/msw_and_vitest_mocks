@@ -29,7 +29,17 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        {todos.length && <div>Todo List : {todos.length}</div>}
+        {
+          todos.length
+          && <>
+            <div>Todo List : {todos.length}</div>
+            {
+              todos.map(todo => {
+                return <p key={todo.id} data-userid={todo.userId}>{todo.todo}</p>
+              })
+            }
+          </>
+        }
       </div>
     </>
   );
